@@ -1,200 +1,505 @@
 ﻿<!DOCTYPE HTML>
 <html>
-	<head>
-		<title>nativeDroid II - jQueryMobile Template</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <link rel="stylesheet" href="css/font-awesome.min.css" />
-        <link rel="stylesheet" href="css/jquery.mobile.min.css" />
-        <link rel="stylesheet" href="css/waves.min.css" />
-        <link rel="stylesheet" href="css/animate.css" />
-        <link rel="stylesheet" href="css/nativedroid2.css" />
 
-		<style>
-			/* Prevent FOUC */
-			body { opacity: 0; }
-		</style>
+<head>
+    <title>
+        nativeDroid II - jQueryMobile Template
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/jquery.mobile.min.css" />
+    <link rel="stylesheet" href="css/waves.min.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/nativedroid2.css" />
+    <style>
+        /* Prevent FOUC */ body {
+            opacity: 0;
+        }
+    </style>
+</head>
 
-	</head>
-	<body>
+<body>
+    <div data-role="page">
+        <nd2-include data-src="panel.left.html">
+        </nd2-include>
+        <div data-role="header" data-position="fixed" class="wow fadeIn">
+            <a href="#leftpanel" class="ui-btn ui-btn-left wow fadeIn" data-wow-delay='0.8s'><i class="zmdi zmdi-menu"></i></a>
+            <h1 class="wow fadeIn" data-wow-delay='0.4s'>
+                Autocomplete
+            </h1>
+        </div>
+        <div role="main" class="ui-content wow fadeIn" data-inset="false" data-wow-delay="0.2s">
+            <ul data-role="listview" data-filter="true" data-filter-reveal="false"
+                data-filter-placeholder="Searching for birds...">
+                <li data-role='list-divider'>
+                    Tinamous
+                </li>
+                <li>
+                    <a href="#" title="Great Tinamou">Great Tinamou</a>
+                </li>
+                <li>
+                    <a href="#" title="Andean Tinamou">Andean Tinamou</a>
+                </li>
+                <li>
+                    <a href="#" title="Elegant Crested Tinamou">Elegant Crested Tinamou</a>
+                </li>
+                <li>
+                    <a href="#" title="Little Tinamou">Little Tinamou</a>
+                </li>
+                <li>
+                    <a href="#" title="Slaty-breasted Tinamou">Slaty-breasted Tinamou</a>
+                </li>
+                <li>
+                    <a href="#" title="Thicket Tinamou">Thicket Tinamou</a>
+                </li>
+                <li data-role='list-divider'>
+                    Waterfowls
+                </li>
+                <li>
+                    <a href="#" title="Southern Screamer">Southern Screamer</a>
+                </li>
+                <li>
+                    <a href="#" title="Horned Screamer">Horned Screamer</a>
+                </li>
+                <li>
+                    <a href="#" title="Magpie-goose" class="mw-redirect">Magpie-goose</a>
+                </li>
+                <li>
+                    <a href="#" title="Swan Goose">Swan Goose</a>
+                </li>
+                <li>
+                    <a href="#" title="White-faced Whistling Duck">White-faced Whistling Duck</a>
+                </li>
+                <li>
+                    <a href="#" title="Greater White-fronted Goose">Greater White-fronted Goose</a>
+                </li>
+                <li>
+                    <a href="#" title="Greylag Goose">Greylag Goose</a>
+                </li>
+                <li>
+                    <a href="#" title="Bar-headed Goose">Bar-headed Goose</a>
+                </li>
+                <li>
+                    <a href="#" title="Snow Goose">Snow Goose</a>
+                </li>
+                <li>
+                    <a href="#" title="Hawaiian Goose" class="mw-redirect">Nene</a>
+                </li>
+                <li>
+                    <a href="#" title="Canada Goose">Canada Goose</a>
+                </li>
+                <li>
+                    <a href="#" title="Brent Goose" class="mw-redirect">Brent Goose</a>
+                    (Brant)
+                </li>
+                <li>
+                    <a href="#" title="Barnacle Goose">Barnacle Goose</a>
+                </li>
+                <li>
+                    <a href="#" title="Canada Goose">Canada Goose</a>
+                </li>
+                <li>
+                    <a href="#" title="Cackling Goose">Cackling Goose</a>
+                </li>
+                <li>
+                    <a href="#" title="Red-breasted Goose">Red-breasted Goose</a>
+                </li>
+                <li>
+                    <a href="#" title="Hawaiian Goose" class="mw-redirect">Hawaiian Goose</a>
+                </li>
+                <li>
+                    <a href="#" title="Nananui">Woods-walking Goose</a>
+                </li>
+                <li>
+                    <a href="#" title="Black Swan">Black Swan</a>
+                </li>
+                <li>
+                    <a href="#" title="Mute Swan">Mute Swan</a>
+                </li>
+                <li>
+                    <a href="#" title="Whooper Swan">Whooper Swan</a>
+                </li>
+                <li>
+                    <a href="#" title="Tundra Swan">Tundra Swan</a>
+                </li>
+                <li>
+                    <a href="#" title="Magellanic Flightless Steamer Duck" class="mw-redirect">Magellanic Flightless Steamer Duck</a>
+                </li>
+                <li>
+                    <a href="#" title="Spur-winged Goose">Spur-winged Goose</a>
+                </li>
+                <li>
+                    <a href="#" title="Egyptian Goose">Egyptian Goose</a>
+                </li>
+                <li>
+                    <a href="#" title="Blue Duck">Blue Duck</a>
+                </li>
+                <li>
+                    <a href="#" title="Orinoco Goose">Orinoco Goose</a>
+                </li>
+                <li>
+                    <a href="#" title="Andean Goose">Andean Goose</a>
+                </li>
+                <li>
+                    <a href="#" title="African Pygmy Goose">African Pygmy Goose</a>
+                </li>
+                <li>
+                    <a href="#" title="Common Shelduck">Common Shelduck</a>
+                </li>
+                <li>
+                    <a href="#" title="Pink-eared Duck">Pink-eared Duck</a>
+                </li>
+                <li>
+                    <a href="#" title="Muscovy Duck">Muscovy Duck</a>
+                </li>
+                <li>
+                    <a href="#" title="Wood Duck">Wood Duck</a>
+                </li>
+                <li>
+                    <a href="#" title="Mandarin Duck">Mandarin Duck</a>
+                </li>
+                <li>
+                    <a href="#" title="Gadwall">Gadwall</a>
+                </li>
+                <li>
+                    <a href="#" title="American Wigeon">American Wigeon</a>
+                </li>
+                <li>
+                    <a href="#" title="Mallard">Mallard</a>
+                </li>
+                <li>
+                    <a href="#" title="Northern Shoveler">Northern Shoveler</a>
+                </li>
+                <li>
+                    <a href="#" title="Brown Teal">Brown Teal</a>
+                </li>
+                <li>
+                    <a href="#" title="Northern Pintail">Northern Pintail</a>
+                </li>
+                <li>
+                    <a href="#" title="Common Teal" class="mw-redirect">Common Teal</a>
+                </li>
+                <li>
+                    <a href="#" title="Marbled Duck">Marbled Duck</a>
+                </li>
+                <li>
+                    <a href="#" title="Common Pochard">Common Pochard</a>
+                </li>
+                <li>
+                    <a href="#" title="Tufted Duck">Tufted Duck</a>
+                </li>
+                <li>
+                    <a href="#" title="Greater Scaup">Greater Scaup</a>
+                </li>
+                <li>
+                    <a href="#" title="King Eider">King Eider</a>
+                </li>
+                <li>
+                    <a href="#" title="Harlequin Duck">Harlequin Duck</a>
+                </li>
+                <li>
+                    <a href="#" title="Black Scoter">Black Scoter</a>
+                </li>
+                <li>
+                    <a href="#" title="Long-tailed Duck">Long-tailed Duck</a>
+                </li>
+                <li>
+                    <a href="#" title="Common Goldeneye">Common Goldeneye</a>
+                </li>
+                <li>
+                    <a href="#" title="Smew">Smew</a>
+                </li>
+                <li>
+                    <a href="#" title="Common Merganser">Common Merganser</a>
+                </li>
+                <li>
+                    <a href="#" title="Black-headed Duck">Black-headed Duck</a>
+                </li>
+                <li>
+                    <a href="#" title="Ruddy Duck">Ruddy Duck</a>
+                </li>
+                <li>
+                    <a href="#" title="Musk Duck">Musk Duck</a>
+                </li>
+                <li data-role='list-divider'>
+                    Birds of Prey
+                </li>
+                <li>
+                    <a href="#" title="Turkey Vulture">Turkey Vulture</a>
+                </li>
+                <li>
+                    <a href="#" title="King Vulture">King Vulture</a>
+                </li>
+                <li>
+                    <a href="#" title="Black Vulture">Black vulture</a>
+                </li>
+                <li>
+                    <a href="#" title="California Condor">California Condor</a>
+                </li>
+                <li>
+                    <a href="#" title="Andean Condor">Andean Condor</a>
+                </li>
+                <li>
+                    <a href="#" title="Northern Caracara" class="mw-redirect">Northern Crested Caracara</a>
+                </li>
+                <li>
+                    <a href="#" title="African Pygmy-falcon" class="mw-redirect">Pygmy Falcon</a>
+                </li>
+                <li>
+                    <a href="#" title="Common Kestrel">Common Kestrel</a>
+                </li>
+                <li>
+                    <a href="#" title="Yellow-headed Caracara">Yellow-headed Caracara</a>
+                </li>
+                <li>
+                    <a href="#" title="Laughing Falcon">Laughing Falcon</a>
+                </li>
+                <li>
+                    <a href="#" title="Greater Kestrel">Greater Kestrel</a>
+                </li>
+                <li>
+                    <a href="#" title="Merlin (bird)">Merlin</a>
+                </li>
+                <li>
+                    <a href="#" title="American Kestrel">American Kestrel</a>
+                </li>
+                <li>
+                    <a href="#" title="Eurasian Hobby">Eurasian Hobby</a>
+                </li>
+                <li>
+                    <a href="#" title="Lanner Falcon">Lanner Falcon</a>
+                </li>
+                <li>
+                    <a href="#" title="Gyrfalcon">Gyrfalcon</a>
+                </li>
+                <li>
+                    <a href="#" title="Prairie Falcon">Prairie Falcon</a>
+                </li>
+                <li>
+                    <a href="#" title="Peregrine Falcon">Peregrine Falcon</a>
+                </li>
+                <li>
+                    <a href="#" title="Secretary Bird" class="mw-redirect">Secretary Bird</a>
+                </li>
+                <li>
+                    <a href="#" title="Osprey">Osprey</a>
+                </li>
+                <li>
+                    <a href="#" title="European Honey Buzzard">European Honey Buzzard</a>
+                </li>
+                <li>
+                    <a href="#" title="Swallow-tailed Kite">Swallow-tailed Kite</a>
+                </li>
+                <li>
+                    <a href="#" title="Snail Kite">Snail Kite</a>
+                </li>
+                <li>
+                    <a href="#" title="Mississippi Kite">Mississippi Kite</a>
+                </li>
+                <li>
+                    <a href="#" title="Red Kite">Red Kite</a>
+                </li>
+                <li>
+                    <a href="#" title="White-tailed Eagle">White-tailed Eagle</a>
+                </li>
+                <li>
+                    <a href="#" title="Black Kite">Black Kite</a>
+                </li>
+                <li>
+                    <a href="#" title="Brahminy Kite">Brahminy Kite</a>
+                </li>
+                <li>
+                    <a href="#" title="African Fish Eagle">African Fish Eagle</a>
+                </li>
+                <li>
+                    <a href="#" title="Bald Eagle">Bald Eagle</a>
+                </li>
+                <li>
+                    <a href="#" title="Palm-nut Vulture">Palm-nut Vulture</a>
+                </li>
+                <li>
+                    <a href="#" title="Bearded Vulture">Bearded Vulture</a>
+                </li>
+                <li>
+                    <a href="#" title="Steller's Sea Eagle">Steller's Sea Eagle</a>
+                </li>
+                <li>
+                    <a href="#" title="Egyptian Vulture">Egyptian Vulture</a>
+                </li>
+                <li>
+                    <a href="#" title="White-backed Vulture">White-backed Vulture</a>
+                </li>
+                <li>
+                    <a href="#" title="Indian Vulture">Indian Vulture</a>
+                </li>
+                <li>
+                    <a href="#" title="Griffon Vulture">Griffon Vulture</a>
+                </li>
+                <li>
+                    <a href="#" title="RÃ¼ppell's Vulture">RÃ¼ppell's Vulture</a>
+                </li>
+                <li>
+                    <a href="#" title="Lappet-faced Vulture">Lappet-faced Vulture</a>
+                </li>
+                <li>
+                    <a href="#" title="Black-chested Snake-eagle" class="mw-redirect">Black-chested Snake-eagle</a>
+                </li>
+                <li>
+                    <a href="#" title="Crested Serpent Eagle">Crested Serpent Eagle</a>
+                </li>
+                <li>
+                    <a href="#" title="Western Marsh Harrier">Western Marsh Harrier</a>
+                </li>
+                <li>
+                    <a href="#" title="Bateleur">Bateleur</a>
+                </li>
+                <li>
+                    <a href="#" title="Pied Harrier">Pied Harrier</a>
+                </li>
+                <li>
+                    <a href="#" title="Harrier Hawk" class="mw-redirect">African Harrier Hawk</a>
+                </li>
+                <li>
+                    <a href="#" title="Hen Harrier">Northern Harrier</a>
+                </li>
+                <li>
+                    <a href="#" title="Lizard Buzzard">Lizard Buzzard</a>
+                </li>
+                <li>
+                    <a href="#" title="Spotted Harrier">Spotted Harrier</a>
+                </li>
+                <li>
+                    <a href="#" title="Grey Goshawk">Grey Goshawk</a>
+                </li>
+                <li>
+                    <a href="#" title="Dark Chanting Goshawk">Dark Chanting Goshawk</a>
+                </li>
+                <li>
+                    <a href="#" title="Little Sparrowhawk">Little Sparrowhawk</a>
+                </li>
+                <li>
+                    <a href="#" title="Besra">Besra</a>
+                </li>
+                <li>
+                    <a href="#" title="Eurasian Sparrowhawk">Eurasian Sparrowhawk</a>
+                </li>
+                <li>
+                    <a href="#" title="Cooper's Hawk">Cooper's Hawk</a>
+                </li>
+                <li>
+                    <a href="#" title="Northern Goshawk">Northern Goshawk</a>
+                </li>
+                <li>
+                    <a href="#" title="Grasshopper Buzzard">Grasshopper Buzzard</a>
+                </li>
+                <li>
+                    <a href="#" title="Crane Hawk">Crane Hawk</a>
+                </li>
+                <li>
+                    <a href="#" title="Plumbeous Hawk">Plumbeous Hawk</a>
+                </li>
+                <li>
+                    <a href="#" title="Common Black Hawk">Common Black Hawk</a>
+                </li>
+                <li>
+                    <a href="#" title="Savanna Hawk">Savanna Hawk</a>
+                </li>
+                <li>
+                    <a href="#" title="White Hawk">White Hawk</a>
+                </li>
+                <li>
+                    <a href="#" title="Harris's Hawk">Harris' Hawk</a>
+                </li>
+                <li>
+                    <a href="#" title="Black-collared Hawk">Black-collared Hawk</a>
+                </li>
+                <li>
+                    <a href="#" title="Solitary Eagle" class="mw-redirect">Solitary Eagle</a>
+                </li>
+                <li>
+                    <a href="#" title="Red-shouldered Hawk">Red-shouldered Hawk</a>
+                </li>
+                <li>
+                    <a href="#" title="Swainson's Hawk">Swainson's Hawk</a>
+                </li>
+                <li>
+                    <a href="#" title="GalÃ¡pagos Hawk" class="mw-redirect">GalÃ¡pagos Hawk</a>
+                </li>
+                <li>
+                    <a href="#" title="Zone-tailed Hawk">Zone-tailed Hawk</a>
+                </li>
+                <li>
+                    <a href="#" title="Red-tailed Hawk">Red-tailed Hawk</a>
+                </li>
+                <li>
+                    <a href="#" title="Common Buzzard">Common Buzzard</a>
+                </li>
+                <li>
+                    <a href="#" title="Ferruginous Hawk">Ferruginous Hawk</a>
+                </li>
+                <li>
+                    <a href="#" title="Long-legged Buzzard">Long-legged Buzzard</a>
+                </li>
+                <li>
+                    <a href="#" title="Harpy Eagle">Harpy Eagle</a>
+                </li>
+                <li>
+                    <a href="#" title="Philippine Eagle">Philippine Eagle</a>
+                </li>
+                <li>
+                    <a href="#" title="Crested Eagle">Crested Eagle</a>
+                </li>
+                <li>
+                    <a href="#" title="Black Eagle">Indian Black Eagle</a>
+                </li>
+                <li>
+                    <a href="#" title="Greater Spotted Eagle">Greater Spotted Eagle</a>
+                </li>
+                <li>
+                    <a href="#" title="Eastern Imperial Eagle">Eastern Imperial Eagle</a>
+                </li>
+                <li>
+                    <a href="#" title="Golden Eagle">Golden Eagle</a>
+                </li>
+                <li>
+                    <a href="#" title="Wedge-tailed Eagle">Wedge-tailed Eagle</a>
+                </li>
+                <li>
+                    <a href="#" title="Verreaux's Eagle">Verreaux's Eagle</a>
+                </li>
+                <li>
+                    <a href="#" title="Wahlberg's Eagle">Wahlberg's Eagle</a>
+                </li>
+                <li>
+                    <a href="#" title="Black-and-white Hawk-eagle" class="mw-redirect">Black-and-white Hawk-eagle</a>
+                </li>
+                <li>
+                    <a href="#" title="Martial Eagle">Martial Eagle</a>
+                </li>
+                <li>
+                    <a href="#" title="Philippine Hawk-eagle" class="mw-redirect">Philippine Hawk-eagle</a>
+                </li>
+                <li>
+                    <a href="#" title="Crowned Eagle">Crowned Eagle</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script type="text/javascript" src="cordova.js">
+    </script>
+    <script src="scripts/jquery.min.js">
+    </script>
+    <script src="scripts/jquery.mobile.min.js">
+    </script>
+    <script src="scripts/waves.min.js">
+    </script>
+    <script src="scripts/wow.min.js">
+    </script>
+    <script src="scripts/nativedroid2.js">
+    </script>
+    <script src="scripts/nd2settings.js">
+    </script>
+</body>
 
-		<div data-role="page">
-
-			<nd2-include data-src="panel.left.html"></nd2-include>
-
-			<div data-role="header" data-position="fixed" class="wow fadeIn">
-				<a href="#leftpanel" class="ui-btn ui-btn-left wow fadeIn" data-wow-delay='0.8s'><i class="zmdi zmdi-menu"></i></a>
-				<h1 class="wow fadeIn" data-wow-delay='0.4s'>Autocomplete</h1>
-			</div>
-
-			<div role="main" class="ui-content wow fadeIn" data-inset="false" data-wow-delay="0.2s">
-
-
-	        <ul data-role="listview" data-filter="true" data-filter-reveal="false" data-filter-placeholder="Searching for birds...">
-				<li data-role='list-divider'>Tinamous</li>
-				<li><a href="#" title="Great Tinamou">Great Tinamou</a></li>
-				<li><a href="#" title="Andean Tinamou">Andean Tinamou</a></li>
-				<li><a href="#" title="Elegant Crested Tinamou">Elegant Crested Tinamou</a></li>
-				<li><a href="#" title="Little Tinamou">Little Tinamou</a></li>
-				<li><a href="#" title="Slaty-breasted Tinamou">Slaty-breasted Tinamou</a></li>
-				<li><a href="#" title="Thicket Tinamou">Thicket Tinamou</a></li>
-				<li data-role='list-divider'>Waterfowls</li>
-				<li><a href="#" title="Southern Screamer">Southern Screamer</a></li>
-				<li><a href="#" title="Horned Screamer">Horned Screamer</a></li>
-				<li><a href="#" title="Magpie-goose" class="mw-redirect">Magpie-goose</a></li>
-				<li><a href="#" title="Swan Goose">Swan Goose</a></li>
-				<li><a href="#" title="White-faced Whistling Duck">White-faced Whistling Duck</a></li>
-				<li><a href="#" title="Greater White-fronted Goose">Greater White-fronted Goose</a></li>
-				<li><a href="#" title="Greylag Goose">Greylag Goose</a></li>
-				<li><a href="#" title="Bar-headed Goose">Bar-headed Goose</a></li>
-				<li><a href="#" title="Snow Goose">Snow Goose</a></li>
-				<li><a href="#" title="Hawaiian Goose" class="mw-redirect">Nene</a></li>
-				<li><a href="#" title="Canada Goose">Canada Goose</a></li>
-				<li><a href="#" title="Brent Goose" class="mw-redirect">Brent Goose</a> (Brant)</li>
-				<li><a href="#" title="Barnacle Goose">Barnacle Goose</a></li>
-				<li><a href="#" title="Canada Goose">Canada Goose</a></li>
-				<li><a href="#" title="Cackling Goose">Cackling Goose</a></li>
-				<li><a href="#" title="Red-breasted Goose">Red-breasted Goose</a></li>
-				<li><a href="#" title="Hawaiian Goose" class="mw-redirect">Hawaiian Goose</a></li>
-				<li><a href="#" title="NÄ“nÄ“-nui">Woods-walking Goose</a></li>
-				<li><a href="#" title="Black Swan">Black Swan</a></li>
-				<li><a href="#" title="Mute Swan">Mute Swan</a></li>
-				<li><a href="#" title="Whooper Swan">Whooper Swan</a></li>
-				<li><a href="#" title="Tundra Swan">Tundra Swan</a></li>
-				<li><a href="#" title="Magellanic Flightless Steamer Duck" class="mw-redirect">Magellanic Flightless Steamer Duck</a></li>
-				<li><a href="#" title="Spur-winged Goose">Spur-winged Goose</a></li>
-				<li><a href="#" title="Egyptian Goose">Egyptian Goose</a></li>
-				<li><a href="#" title="Blue Duck">Blue Duck</a></li>
-				<li><a href="#" title="Orinoco Goose">Orinoco Goose</a></li>
-				<li><a href="#" title="Andean Goose">Andean Goose</a></li>
-				<li><a href="#" title="African Pygmy Goose">African Pygmy Goose</a></li>
-				<li><a href="#" title="Common Shelduck">Common Shelduck</a></li>
-				<li><a href="#" title="Pink-eared Duck">Pink-eared Duck</a></li>
-				<li><a href="#" title="Muscovy Duck">Muscovy Duck</a></li>
-				<li><a href="#" title="Wood Duck">Wood Duck</a></li>
-				<li><a href="#" title="Mandarin Duck">Mandarin Duck</a></li>
-				<li><a href="#" title="Gadwall">Gadwall</a></li>
-				<li><a href="#" title="American Wigeon">American Wigeon</a></li>
-				<li><a href="#" title="Mallard">Mallard</a></li>
-				<li><a href="#" title="Northern Shoveler">Northern Shoveler</a></li>
-				<li><a href="#" title="Brown Teal">Brown Teal</a></li>
-				<li><a href="#" title="Northern Pintail">Northern Pintail</a></li>
-				<li><a href="#" title="Common Teal" class="mw-redirect">Common Teal</a></li>
-				<li><a href="#" title="Marbled Duck">Marbled Duck</a></li>
-				<li><a href="#" title="Common Pochard">Common Pochard</a></li>
-				<li><a href="#" title="Tufted Duck">Tufted Duck</a></li>
-				<li><a href="#" title="Greater Scaup">Greater Scaup</a></li>
-				<li><a href="#" title="King Eider">King Eider</a></li>
-				<li><a href="#" title="Harlequin Duck">Harlequin Duck</a></li>
-				<li><a href="#" title="Black Scoter">Black Scoter</a></li>
-				<li><a href="#" title="Long-tailed Duck">Long-tailed Duck</a></li>
-				<li><a href="#" title="Common Goldeneye">Common Goldeneye</a></li>
-				<li><a href="#" title="Smew">Smew</a></li>
-				<li><a href="#" title="Common Merganser">Common Merganser</a></li>
-				<li><a href="#" title="Black-headed Duck">Black-headed Duck</a></li>
-				<li><a href="#" title="Ruddy Duck">Ruddy Duck</a></li>
-				<li><a href="#" title="Musk Duck">Musk Duck</a></li>
-				<li data-role='list-divider'>Birds of Prey</li>
-				<li><a href="#" title="Turkey Vulture">Turkey Vulture</a></li>
-				<li><a href="#" title="King Vulture">King Vulture</a></li>
-				<li><a href="#" title="Black Vulture">Black vulture</a></li>
-				<li><a href="#" title="California Condor">California Condor</a></li>
-				<li><a href="#" title="Andean Condor">Andean Condor</a></li>
-				<li><a href="#" title="Northern Caracara" class="mw-redirect">Northern Crested Caracara</a></li>
-				<li><a href="#" title="African Pygmy-falcon" class="mw-redirect">Pygmy Falcon</a></li>
-				<li><a href="#" title="Common Kestrel">Common Kestrel</a></li>
-				<li><a href="#" title="Yellow-headed Caracara">Yellow-headed Caracara</a></li>
-				<li><a href="#" title="Laughing Falcon">Laughing Falcon</a></li>
-				<li><a href="#" title="Greater Kestrel">Greater Kestrel</a></li>
-				<li><a href="#" title="Merlin (bird)">Merlin</a></li>
-				<li><a href="#" title="American Kestrel">American Kestrel</a></li>
-				<li><a href="#" title="Eurasian Hobby">Eurasian Hobby</a></li>
-				<li><a href="#" title="Lanner Falcon">Lanner Falcon</a></li>
-				<li><a href="#" title="Gyrfalcon">Gyrfalcon</a></li>
-				<li><a href="#" title="Prairie Falcon">Prairie Falcon</a></li>
-				<li><a href="#" title="Peregrine Falcon">Peregrine Falcon</a></li>
-				<li><a href="#" title="Secretary Bird" class="mw-redirect">Secretary Bird</a></li>
-				<li><a href="#" title="Osprey">Osprey</a></li>
-				<li><a href="#" title="European Honey Buzzard">European Honey Buzzard</a></li>
-				<li><a href="#" title="Swallow-tailed Kite">Swallow-tailed Kite</a></li>
-				<li><a href="#" title="Snail Kite">Snail Kite</a></li>
-				<li><a href="#" title="Mississippi Kite">Mississippi Kite</a></li>
-				<li><a href="#" title="Red Kite">Red Kite</a></li>
-				<li><a href="#" title="White-tailed Eagle">White-tailed Eagle</a></li>
-				<li><a href="#" title="Black Kite">Black Kite</a></li>
-				<li><a href="#" title="Brahminy Kite">Brahminy Kite</a></li>
-				<li><a href="#" title="African Fish Eagle">African Fish Eagle</a></li>
-				<li><a href="#" title="Bald Eagle">Bald Eagle</a></li>
-				<li><a href="#" title="Palm-nut Vulture">Palm-nut Vulture</a></li>
-				<li><a href="#" title="Bearded Vulture">Bearded Vulture</a></li>
-				<li><a href="#" title="Steller's Sea Eagle">Steller's Sea Eagle</a></li>
-				<li><a href="#" title="Egyptian Vulture">Egyptian Vulture</a></li>
-				<li><a href="#" title="White-backed Vulture">White-backed Vulture</a></li>
-				<li><a href="#" title="Indian Vulture">Indian Vulture</a></li>
-				<li><a href="#" title="Griffon Vulture">Griffon Vulture</a></li>
-				<li><a href="#" title="RÃ¼ppell's Vulture">RÃ¼ppell's Vulture</a></li>
-				<li><a href="#" title="Lappet-faced Vulture">Lappet-faced Vulture</a></li>
-				<li><a href="#" title="Black-chested Snake-eagle" class="mw-redirect">Black-chested Snake-eagle</a></li>
-				<li><a href="#" title="Crested Serpent Eagle">Crested Serpent Eagle</a></li>
-				<li><a href="#" title="Western Marsh Harrier">Western Marsh Harrier</a></li>
-				<li><a href="#" title="Bateleur">Bateleur</a></li>
-				<li><a href="#" title="Pied Harrier">Pied Harrier</a></li>
-				<li><a href="#" title="Harrier Hawk" class="mw-redirect">African Harrier Hawk</a></li>
-				<li><a href="#" title="Hen Harrier">Northern Harrier</a></li>
-				<li><a href="#" title="Lizard Buzzard">Lizard Buzzard</a></li>
-				<li><a href="#" title="Spotted Harrier">Spotted Harrier</a></li>
-				<li><a href="#" title="Grey Goshawk">Grey Goshawk</a></li>
-				<li><a href="#" title="Dark Chanting Goshawk">Dark Chanting Goshawk</a></li>
-				<li><a href="#" title="Little Sparrowhawk">Little Sparrowhawk</a></li>
-				<li><a href="#" title="Besra">Besra</a></li>
-				<li><a href="#" title="Eurasian Sparrowhawk">Eurasian Sparrowhawk</a></li>
-				<li><a href="#" title="Cooper's Hawk">Cooper's Hawk</a></li>
-				<li><a href="#" title="Northern Goshawk">Northern Goshawk</a></li>
-				<li><a href="#" title="Grasshopper Buzzard">Grasshopper Buzzard</a></li>
-				<li><a href="#" title="Crane Hawk">Crane Hawk</a></li>
-				<li><a href="#" title="Plumbeous Hawk">Plumbeous Hawk</a></li>
-				<li><a href="#" title="Common Black Hawk">Common Black Hawk</a></li>
-				<li><a href="#" title="Savanna Hawk">Savanna Hawk</a></li>
-				<li><a href="#" title="White Hawk">White Hawk</a></li>
-				<li><a href="#" title="Harris's Hawk">Harris' Hawk</a></li>
-				<li><a href="#" title="Black-collared Hawk">Black-collared Hawk</a></li>
-				<li><a href="#" title="Solitary Eagle" class="mw-redirect">Solitary Eagle</a></li>
-				<li><a href="#" title="Red-shouldered Hawk">Red-shouldered Hawk</a></li>
-				<li><a href="#" title="Swainson's Hawk">Swainson's Hawk</a></li>
-				<li><a href="#" title="GalÃ¡pagos Hawk" class="mw-redirect">GalÃ¡pagos Hawk</a></li>
-				<li><a href="#" title="Zone-tailed Hawk">Zone-tailed Hawk</a></li>
-				<li><a href="#" title="Red-tailed Hawk">Red-tailed Hawk</a></li>
-				<li><a href="#" title="Common Buzzard">Common Buzzard</a></li>
-				<li><a href="#" title="Ferruginous Hawk">Ferruginous Hawk</a></li>
-				<li><a href="#" title="Long-legged Buzzard">Long-legged Buzzard</a></li>
-				<li><a href="#" title="Harpy Eagle">Harpy Eagle</a></li>
-				<li><a href="#" title="Philippine Eagle">Philippine Eagle</a></li>
-				<li><a href="#" title="Crested Eagle">Crested Eagle</a></li>
-				<li><a href="#" title="Black Eagle">Indian Black Eagle</a></li>
-				<li><a href="#" title="Greater Spotted Eagle">Greater Spotted Eagle</a></li>
-				<li><a href="#" title="Eastern Imperial Eagle">Eastern Imperial Eagle</a></li>
-				<li><a href="#" title="Golden Eagle">Golden Eagle</a></li>
-				<li><a href="#" title="Wedge-tailed Eagle">Wedge-tailed Eagle</a></li>
-				<li><a href="#" title="Verreaux's Eagle">Verreaux's Eagle</a></li>
-				<li><a href="#" title="Wahlberg's Eagle">Wahlberg's Eagle</a></li>
-				<li><a href="#" title="Black-and-white Hawk-eagle" class="mw-redirect">Black-and-white Hawk-eagle</a></li>
-				<li><a href="#" title="Martial Eagle">Martial Eagle</a></li>
-				<li><a href="#" title="Philippine Hawk-eagle" class="mw-redirect">Philippine Hawk-eagle</a></li>
-				<li><a href="#" title="Crowned Eagle">Crowned Eagle</a></li>
-	        </ul>
-
-
-			</div>
-
-		</div>
-
-        <script type="text/javascript" src="cordova.js"></script>
-        <script src="scripts/jquery.min.js"></script>
-        <script src="scripts/jquery.mobile.min.js"></script>
-        <script src="scripts/waves.min.js"></script>
-        <script src="scripts/wow.min.js"></script>
-        <script src="scripts/nativedroid2.js"></script>
-        <script src="scripts/nd2settings.js"></script>
-
-	</body>
 </html>
